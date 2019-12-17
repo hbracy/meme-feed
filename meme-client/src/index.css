@@ -1,0 +1,897 @@
+/*
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+*/
+:root {
+  --header-height: 5vh;
+  --scroller-margin: 10px;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  min-height: var(--header-height);
+  line-height: var(--header-height);
+  margin-bottom: var(--header-height);
+}
+
+.scroller-margin {
+  margin-right: var(--scroller-margin);
+}
+
+.header-height {
+  min-height: var(--header-height);
+}
+
+.light-grey {
+    background-color: LightGray;
+
+}
+
+
+.border {
+	border: 2vh solid white;
+
+}
+
+.black-border {
+	border: 0.5vh solid black;
+	border-radius: 2vh;
+}
+
+.min-quarter-height {
+	min-height: 25%;
+}
+
+.quarter-width {
+	width: 25%;
+}
+
+.full-height {
+	height: 100%;
+}
+
+.white {
+	background-color: white;
+}
+/* Page content */
+.padding {
+  padding: 1vh;
+}
+
+.eighty-percent-width {
+    width: 80%;
+}
+
+.double-padding {
+  padding: 2vh;
+}
+
+.fifteen-percent-width {
+    width: 15%;
+}
+
+.twenty-percent-width {
+    width: 20%;
+}
+
+.twenty-percent-height {
+    height: 20%;
+}
+
+.eighty-percent-height {
+    height: 80%;
+}
+
+.fixed-position + .padding {
+  padding-top: 10vh;
+} 
+
+.center {
+	margin: 0 auto;
+}
+
+.float-left {
+	float: left;
+}
+.bottom {
+  bottom: 5%;
+}
+.left {
+	left: 5%;
+}
+
+.tenth-width {
+	width: 10%;
+}
+
+.vertical-center {
+	top: 50%;
+}
+
+.half-width {
+	width: 60%;
+}
+
+/*
+.flex {
+	display: flex;
+}
+*/
+
+.inline-block {
+	display: inline-block;
+}
+
+.no-border {
+	border: 0;
+}
+
+.fixed-position {
+	position: fixed;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.flex {
+	display: flex;
+  flex-wrap: wrap;
+
+}
+
+.only-flex {
+	display: flex;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+
+
+#header-box {
+	display: flex;
+  flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+#footer-box {
+	display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+  box-sizing: border-box;
+	width: 100%;
+	height: 10vh;
+
+
+}
+.pictures {
+	
+}
+
+.ninety-percent-width {
+	width: 85%;
+}
+
+.ten-percent-width {
+	width: 15%;
+}
+
+
+.app-box {
+  display: flex;
+	flex-wrap: wrap;
+}
+
+.border-box {
+	box-sizing: border-box;
+
+}
+
+#left-box {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+	width: 16%;
+	height: 10%;
+}
+
+#top-box {
+  display: flex;
+  flex-wrap: wrap;
+	height: 100%;
+	width: 100%;
+
+}
+
+#bottom-box {
+  display: flex;
+/*	flex-wrap: wrap;*/
+/*  box-sizing: border-box;*/
+	height: 50%;
+	width: 100%;
+}
+
+
+#right-box {
+  display: flex;
+  flex: 1 0 auto;
+	flex-wrap: wrap;
+  box-sizing: border-box;
+}
+#login-cell {
+  background-color: black;
+  width: 50%;
+	height: 50%;
+}
+#signup-cell {
+  background-color: mediumpurple;
+  width: 50%;
+	height: 50%;
+
+}
+.white-text {
+	color: white;
+}
+
+.big-text {
+	font-size: 7vw;
+}
+
+.absolute-position {
+	position: absolute;
+}
+
+#about-header {
+	background-color: mediumpurple;
+  width: 33%;
+
+}
+
+#header-cell {
+  width: 60%;
+
+}
+
+#profile-cell {
+	width: 20%;
+
+}
+
+#info-cell {
+	background-color: white;
+	width: 100%;
+	
+}
+
+#info-cell2 {
+	background-color: indwhiteianred;
+  width: 100%;
+}
+
+#about-cell {
+	background-color: indianred;
+  width: 100%;
+	height: 50%;
+}
+
+#footer-cell {
+	background-color: white;
+  width: 100%;
+}
+
+#teach-cell {
+  background-color: mediumpurple;
+/*  flex: 1 0 auto*/
+	width: 100%;
+}
+#learn-cell {
+  background-color: indianred;
+  flex: 1 0 auto;
+}
+
+#scroll-cell {
+	background-color: mediumpurple;
+  width: 100%;
+	height: 50%;
+
+}
+
+#choice-scroll-cell {
+	background-color: mediumpurple;
+  width: 20%;
+	height: 20%;
+
+}
+
+#language-scroll-cell {
+	background-color: mediumpurple;
+  width: 30%;
+	height: 20%;
+
+}
+
+#call-cell {
+	background-color: indianred;
+}
+
+#headline-container {
+	width: 100%;
+}
+
+#headline-begin {
+	font-size: 6vh;
+}
+
+#learn-teach-choice {
+}
+
+.thirty-percent-width {
+	width: 30%;
+}
+
+.full-box {
+	
+}
+
+.top-half {
+	display: flex;
+  flex-wrap: wrap;
+	height: 50%;
+	width: 100%;
+}
+
+.top-part {
+	display: flex;
+  flex-wrap: wrap;
+	height: 30%;
+	width: 100%;
+
+}
+
+.block {
+	display: inline-block;
+	
+}
+
+.small-text {
+	font-size: 5vw;
+}
+
+.flex-column {
+	flex-direction: column
+}
+
+.flex-no-wrap {
+  flex-shrink: 0;
+
+}
+
+.flex-grow {
+	flex-grow: 1;
+}
+
+.flex-start {
+	align-items: flex-start;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.newline {
+	clear: both;
+}
+
+.full-view-pic {
+	width: 100%;
+	height: 100%;
+	
+}
+
+
+
+.icon {
+	width: 10vh;
+	display: inline-block;
+	padding: 0.5vh;
+}
+
+.padding-top {
+	padding-top: 5vh;
+}
+
+.centered {
+	text-align: center;
+}
+
+
+.scroll {
+    overflow-y: scroll;
+}
+
+.min-full-height {
+	height: 86vh;
+	min-height: 86vh;
+}
+
+.cell {
+  display: flex;
+  align-items:baseline;
+  justify-content:center;
+  box-sizing: border-box;
+}
+
+
+.flow-cell {
+	display: flex;
+  flex-flow: row wrap;
+	align-items:baseline;
+  justify-content:center;
+  box-sizing: border-box;
+	overflow: auto;
+}
+
+.small-circle {
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+
+.green {
+	background-color: limegreen;
+}
+
+.empty {}
+
+.turquoise {
+	background-color: paleturquoise;
+}
+
+.small-border {
+	border: .3vh solid black;
+	border-radius: 2vh;
+
+}
+
+.no-select {
+}
+.curved-border {
+	border-radius: 2vh;
+
+}
+
+.margin-top {
+	margin-top: 3%;
+}
+
+.third-width {
+	width: 31%;
+}
+
+.min-width {
+	min-width: 200px;
+}
+
+.small-padding {
+	padding: 1%;
+}
+
+.empty {
+	border: .1vh solid black;
+}
+
+.curved {
+	border: 1vh;
+	border-radius: 2vh;
+
+}
+
+.sticky {
+	position: fixed;
+}
+
+@media only screen and (min-width: 1080px) {
+	
+}
+
+.no-horizontal-scrolling {
+    overflow-x: hidden;
+}
+
+.overflow-will-change {
+    will-change: overflow;
+}
+
+.hidden-overflow {
+    overflow: hidden;
+}
+
+.auto-overflow {
+    overflow: auto;
+}
+
+.header-padding {
+	padding-top: 12vh;
+}
+
+.quarter-view {
+	height: %;
+}
+
+.float-right {
+  float: right;
+}
+
+.large-font {
+  font-size: 200%;
+}
+
+.right {
+    right: 0;
+}
+
+.relative-position {
+	position: relative;
+}
+
+.z-index-front {
+	z-index: 10;
+}
+
+.z-index-back {
+	z-index: 1;
+}
+
+.plain-cell{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  box-sizing: border-box;
+	background-color: #ffffff;
+}
+
+.upper-left-corner {
+	top: 10%;
+	width: 80%;
+	text-align: left;
+}
+
+.inline {
+	display: inline;
+}
+
+.text {
+  color: black;
+  font-weight: bold;
+}
+
+.black-text {
+	color: black;
+}
+
+.dark-text {
+	color: black;
+  font-weight: bold;
+
+}
+.modal {
+	display: none;
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 20%;
+	z-index: 10;
+}
+
+.none-display {
+	display: none;
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+	border-radius: 6vh;
+/*	background-color: #ADE8E8;*/
+	min-height: 20%;
+}
+
+.popdown-box {
+  background-color: var(--base-4);
+  margin: calc(var(--header-height) + 3px) auto; 
+  margin-right: 10px;
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+  border-radius: 2vh;
+  min-height: 20%;
+}
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+span.password {
+  float: right;
+  padding-top: 2vh;
+}
+
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0; 
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+.submit {
+  padding: 0.7vh 0.7vh;
+  margin-left: 8px;
+  border: none;
+/*  width: 10%;*/
+/*  border: 0.5vh solid black;*/
+  border-radius: 0.5vh;
+
+}
+
+
+.scroll-div {
+	overflow:scroll;
+	height: 80%;
+	width: 80%;
+	text-align:center;
+}
+
+.scroll-button {
+	background-color: indianred;
+	width: 100%;
+	color: white;
+	height: 19%;
+}
+
+.scroll-button2 {
+	background-color: indianred;
+	width: 100%;
+	color: white;
+	height: 85%;
+}
+
+.info {
+	margin-bottom: 2vh;
+	display: block;
+}
+
+.brand-text {
+	color: var(--base-4);
+	font-weight:bold;
+	font-size: 5vh;
+}
+
+.gray {
+	background-color: lightgray;
+}
+.hover {
+	cursor: pointer;
+}
+
+.hover:hover {
+/*	background-color: #4286f4;*/
+	filter: brightness(120%);
+}
+
+.geneva-font {
+  font-family: "Tahoma", "Geneva", "sans-serif"
+}
+
+
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+html, body {
+	margin: 0;
+	background-color: white;
+	height: 100%;
+/*	width: 100%;*/
+}
+
+body {
+	font-family: 'Playfair Display', serif;
+
+/*	font-family: 'Open Sans';*/
+/*font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;*/
+
+}
+
+.button {
+	cursor: pointer;
+	width: 100%;
+}
+
+.button:hover {
+/*	background-color: #4286f4;*/
+	filter: brightness(120%);
+}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+
+/*For loading spinner*/
+.loading-circle {
+  transform: translateZ(1px);
+	display: block;
+}
+
+.loading-circle > div {
+  display: inline-block;
+  width: 12vw;
+  height: 12vw;
+  margin: 0.5vh;
+  border-radius: 50%;
+  background: #fff;
+  animation: loading-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+
+.base-1 {
+	background-color: var(--base-1);
+}
+
+
+.base-2 {
+	background-color: var(--base-2);
+    color: white;
+}
+
+.base-3 {
+	background-color: var(--base-3);
+}
+
+.base-4 {
+	background-color: var(--base-4);
+}
+
+
+
+
+.light-theme {
+  @extend .theme;
+  --base-1: #f2f2f2;
+  --base-2: #dadada;
+  --base-3: #aaa;
+  --base-4: #000;
+}
+
+.dark-theme {
+  @extend .theme;
+  --base-1: #000;
+  --base-2: #333;
+  --base-3: #999;
+  --base-4: #fff;
+}
+
+.pro-theme {
+  @extend .theme;
+	--base-1: #90AFC5;
+  --base-2: #336B87;
+  --base-3: #2A3132;
+  --base-4: #763626;
+	
+}
+
+.blue-theme {
+  @extend .theme;
+  --base-1: #ffffff;
+  --base-2: #3b5998;
+  --base-3: #b2c1e1;
+  --base-4: #e9ebee;
+
+}
+
+.timeless-theme {
+  @extend .theme;
+	--base-1: #F1F3CE;
+  --base-2: #1E656D;
+  --base-3: #F62A00;
+  --base-4: #00293C;
+	
+}
+
+.muted-theme {
+  @extend .theme;
+	--base-1: #F4F4F4;
+  --base-2: #DCD0C0;
+  --base-3: #C0B283;
+  --base-4: #373737;
+	
+}
+
+.theme {
+  background-color: var(--base-1);
+  color: var(--base-4);
+}
+
+@keyframes loading-circle {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
+}
+
+
+
+
+
+
+
+
+
